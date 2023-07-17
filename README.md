@@ -61,6 +61,5 @@ Please cite this paper when you use our code.
 ```
 
 ## License
-This software may be used only for non-commercial purposes (e.g., research eval>
-Please contact Prof. U Kang (ukang@snu.ac.kr) if you want to use it for other p>
-
+This software may be used only for non-commercial purposes (e.g., research evaluation) in universities.
+Please contact Prof. U Kang (ukang@snu.ac.kr) if you want to use it for other purposes or use it in places other than universities.
