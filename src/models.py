@@ -1,0 +1,147 @@
+from torchvision import models
+
+
+pretrained_model_dict = {
+    # densenet
+    'densenet121': models.densenet121,
+    'densenet161': models.densenet161,
+    'densenet169': models.densenet169,
+    'densenet201': models.densenet201,
+    # mnasnet
+    'mnasnet0_5': models.mnasnet0_5,
+    'mnasnet1_0': models.mnasnet1_0,
+    # mobilenet
+    'mobilenet_v2': models.mobilenet_v2,
+    'mobilenet_v3_large': models.mobilenet_v3_large,
+    'mobilenet_v3_small': models.mobilenet_v3_small,
+    # resnet
+    'resnet18': models.resnet18,
+    'resnet34': models.resnet34,
+    'resnet50': models.resnet50,
+    'resnet101': models.resnet101,
+    'resnet152': models.resnet152,
+    # resnext
+    'resnext50_32x4d': models.resnext50_32x4d,
+    'resnext101_32x8d': models.resnext101_32x8d,
+    # shufflenet
+    'shufflenet_v2_x0_5': models.shufflenet_v2_x0_5,
+    'shufflenet_v2_x1_0': models.shufflenet_v2_x1_0,
+    # widerresnet
+    'wide_resnet50_2': models.wide_resnet50_2,
+    'wide_resnet101_2': models.wide_resnet101_2,
+
+    'efficientnet_b0': models.efficientnet_b0,
+    'efficientnet_b1': models.efficientnet_b1,
+    'efficientnet_b2': models.efficientnet_b2,
+    'efficientnet_b3': models.efficientnet_b3,
+    'efficientnet_b4': models.efficientnet_b4,
+    'efficientnet_b5': models.efficientnet_b5,
+    'efficientnet_b6': models.efficientnet_b6,
+    'efficientnet_b7': models.efficientnet_b7,
+    'efficientnet_v2_s': models.efficientnet_v2_s,
+    'efficientnet_v2_m': models.efficientnet_v2_m,
+    'efficientnet_v2_l': models.efficientnet_v2_l,
+    # # mnasnet
+    'mnasnet0_75': models.mnasnet0_75,
+    'mnasnet1_3': models.mnasnet1_3,
+    # # regnet
+    'regnet_y_400mf': models.regnet_y_400mf,
+    'regnet_y_800mf': models.regnet_y_800mf,
+    'regnet_y_1_6gf': models.regnet_y_1_6gf,
+    'regnet_y_3_2gf': models.regnet_y_3_2gf,
+    'regnet_y_8gf': models.regnet_y_8gf,
+    'regnet_y_16gf': models.regnet_y_16gf,
+    'regnet_y_32gf': models.regnet_y_32gf,
+    'regnet_y_128gf': models.regnet_x_400mf,
+    'regnet_x_400mf': models.regnet_x_400mf,
+    'regnet_x_800mf': models.regnet_x_800mf,
+    'regnet_x_1_6gf': models.regnet_x_1_6gf,
+    'regnet_x_3_2gf': models.regnet_x_3_2gf,
+    'regnet_x_8gf': models.regnet_x_8gf,
+    'regnet_x_16gf': models.regnet_x_16gf,
+    'regnet_x_32gf': models.regnet_x_32gf,
+    # # shufflenet
+    'shufflenet_v2_x1_5': models.shufflenet_v2_x1_5,
+    'shufflenet_v2_x2_0': models.shufflenet_v2_x2_0,
+
+    # swin
+    'swin_t': models.swin_t,
+    'swin_s': models.swin_s,
+    'swin_b': models.swin_b,
+    # vit
+    'vit_b_16': models.vit_b_16,
+    'vit_b_32': models.vit_b_32,
+    'vit_l_16': models.vit_l_16,
+    'vit_l_32': models.vit_l_32,
+}
+
+weights_dict = {
+    'densenet121': models.DenseNet121_Weights,
+    'densenet161': models.DenseNet161_Weights,
+    'densenet169': models.DenseNet169_Weights,
+    'densenet201': models.DenseNet201_Weights,
+    'mnasnet0_5': models.MNASNet0_5_Weights,
+    'mnasnet1_0': models.MNASNet1_0_Weights,
+    'mobilenet_v2': models.MobileNet_V2_Weights,
+    'mobilenet_v3_large': models.MobileNet_V3_Large_Weights,
+    'mobilenet_v3_small': models.MobileNet_V3_Small_Weights,
+    'resnet18': models.ResNet18_Weights,
+    'resnet34': models.ResNet34_Weights,
+    'resnet50': models.ResNet50_Weights,
+    'resnet101': models.ResNet101_Weights,
+    'resnet152': models.ResNet152_Weights,
+    'resnext50_32x4d': models.ResNeXt50_32X4D_Weights,
+    'resnext101_32x8d': models.ResNeXt101_32X8D_Weights,
+    'shufflenet_v2_x0_5': models.ShuffleNet_V2_X0_5_Weights,
+    'shufflenet_v2_x1_0': models.ShuffleNet_V2_X1_0_Weights,
+    'wide_resnet50_2': models.Wide_ResNet50_2_Weights,
+    'wide_resnet101_2': models.Wide_ResNet101_2_Weights,
+
+    'efficientnet_b0': models.EfficientNet_B0_Weights,
+    'efficientnet_b1': models.EfficientNet_B1_Weights,
+    'efficientnet_b2': models.EfficientNet_B2_Weights,
+    'efficientnet_b3': models.EfficientNet_B3_Weights,
+    'efficientnet_b4': models.EfficientNet_B4_Weights,
+    'efficientnet_b5': models.EfficientNet_B5_Weights,
+    'efficientnet_b6': models.EfficientNet_B6_Weights,
+    'efficientnet_b7': models.EfficientNet_B7_Weights,
+    'efficientnet_v2_s': models.EfficientNet_V2_S_Weights,
+    'efficientnet_v2_m': models.EfficientNet_V2_M_Weights,
+    'efficientnet_v2_l': models.EfficientNet_V2_L_Weights,
+    'mnasnet0_75': models.MNASNet0_75_Weights,
+    'mnasnet1_3': models.MNASNet1_3_Weights,
+    'regnet_y_400mf': models.RegNet_Y_400MF_Weights,
+    'regnet_y_800mf': models.RegNet_Y_800MF_Weights,
+    'regnet_y_1_6gf': models.RegNet_Y_1_6GF_Weights,
+    'regnet_y_3_2gf': models.RegNet_Y_3_2GF_Weights,
+    'regnet_y_8gf': models.RegNet_Y_8GF_Weights,
+    'regnet_y_16gf': models.RegNet_Y_16GF_Weights,
+    'regnet_y_32gf': models.RegNet_Y_32GF_Weights,
+    'regnet_y_128gf': models.RegNet_Y_128GF_Weights,
+    'regnet_x_400mf': models.RegNet_X_400MF_Weights,
+    'regnet_x_800mf': models.RegNet_X_800MF_Weights,
+    'regnet_x_1_6gf': models.RegNet_X_1_6GF_Weights,
+    'regnet_x_3_2gf': models.RegNet_X_3_2GF_Weights,
+    'regnet_x_8gf': models.RegNet_X_8GF_Weights,
+    'regnet_x_16gf': models.RegNet_X_16GF_Weights,
+    'regnet_x_32gf': models.RegNet_X_32GF_Weights,
+    'shufflenet_v2_x1_5': models.ShuffleNet_V2_X1_5_Weights,
+    'shufflenet_v2_x2_0': models.ShuffleNet_V2_X2_0_Weights,
+
+    'swin_t': models.Swin_T_Weights,
+    'swin_s': models.Swin_S_Weights,
+    'swin_b': models.Swin_B_Weights,
+    'vit_b_16': models.ViT_B_16_Weights,
+    'vit_b_32': models.ViT_B_32_Weights,
+    'vit_l_16': models.ViT_L_16_Weights,
+    'vit_l_32': models.ViT_L_32_Weights,
+}
+
+pretrained_path_dict = {
+    'barlowtwins': 'resnet50.path',
+    'swav': 'swav_800ep_pretrain.pth.tar',
+    'moco_v1': 'moco_v1_200ep_pretrain.pth.tar',
+    'moco_v2': 'moco_v2_800ep_pretrain.pth.tar',
+    'simsiam': 'checkpoint_0099.pth.tar',
+    'dino': 'dino_resnet50_pretrain.pth'
+}
